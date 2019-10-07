@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Event</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<a href="index.html">
+				<picture>
+				  <source media="(min-width: 650px)" srcset="img/Logo_1.png">
+				  <source media="(min-width: 375px)" srcset="img/Logo_2.png">
+				  <img src="img/Logo_2.png" alt="Main_Logo">
+				</picture>
+				</a>	
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Search</a></li>
+					<li><a href="add-review.html">Add Review</a></li>
+					<li class="current"><a href="add-event.html">Add Event</a></li>
+					<li><a href="sign-up.html">Sign-up/Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="add-review">
+		<div class="page-title">
+			Add an Event
+		</div>
+		<div class="review-container">
+			<form>
+				<input type="text" placeholder="Event Name">
+			</form>
+			<form>
+				<input type="text" placeholder="Company Name">
+			</form>
+			<form>
+				<input type="text" placeholder="Address">
+			</form>
+			<form>
+				<input type="text" placeholder="Event Description">
+			</form>
+			<form>
+				<input type="text" placeholder="Latitude">
+			</form>
+			<form>
+				<input type="text" placeholder="Longitude">
+			</form>
+			Select an image to upload
+			<form>
+			    <input type="file" name="fileToUpload" id="fileToUpload">
+			    <!-- <input type="submit" value="Upload Image" name="submit"> -->
+			</form>
+			<form>
+				<input type="text" placeholder="Link to Video (i.e. https://www.youtube.com/...)">
+			</form>
+
+			<button type="submit" class="button_1">Submit</button>
+		</div>
+	</section>
+
+	<footer>
+		<p>Team Building Copyright &copy; 2019</p>
+	</footer>
+</body>
+</html>

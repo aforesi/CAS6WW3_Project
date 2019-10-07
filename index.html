@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Building Events</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="./css/style.css">
+	<meta property="og:title" content="Find team building events near your" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="Find team building events near you" />
+	<meta property="og:description"        content="Search for corporate and academic team building events in your area" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link rel="apple-touch-icon" href="img/favicon.png"/>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<a href="index.html">
+				<picture>
+				  <source media="(min-width: 650px)" srcset="img/Logo_1.png">
+				  <source media="(min-width: 375px)" srcset="img/Logo_2.png">
+				  <img src="img/Logo_2.png" alt="Main_Logo">
+				</picture>
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Search</a></li>
+					<li><a href="add-review.html">Add Review</a></li>
+					<li><a href="add-event.html">Add Event</a></li>
+					<li><a href="sign-up.html">Sign-up/Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="layer">
+		</div>
+		<div class="container">
+			<h1>Find Team Building Events Near You</h1>
+		</div>
+	</section>
+
+	<section id="add-review">
+		<div class="container">
+			Search by Location <br>
+			<form action="results.html">
+				<input type="text" placeholder="I.e. Toronto, ON">
+			</form>
+			Search by Rating <br>
+			<select class="review-ddl" name="review-status">
+				<option value="default">Select an Overall Review</option>
+				<option value="50">> 50% Positive</option>
+				<option value="50">> 60% Positive</option>
+				<option value="50">> 70% Positive</option>
+				<option value="50">> 80% Positive</option>
+				<option value="50">> 90% Positive</option>
+			</select>
+			<form action="results.html">
+				<button type="submit" class="button_1">Search</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="./img/corporate.jpg" alt="html5 Logo">
+				<h3>Corporate</h3>
+			</div>
+			<div class="box">
+				<img src="./img/classroom.jpg" alt="CSS Logo">
+				<h3>Classroom</h3>
+			</div>
+			<div class="box">
+				<img src="./img/sports.jpg" alt="html5 Logo">
+				<h3>Athletic</h3>
+			</div>
+		</div>
+
+	</section>
+
+	<footer>
+		<p>Team Building Copyright &copy; 2019</p>
+	</footer>
+
+</body>
+</html>

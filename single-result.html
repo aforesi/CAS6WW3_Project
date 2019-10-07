@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<a href="index.html">
+					<picture>
+					  <source media="(min-width: 650px)" srcset="img/Logo_1.png">
+					  <source media="(min-width: 375px)" srcset="img/Logo_2.png">
+					  <img src="img/Logo_2.png" alt="Main_Logo">
+					</picture>
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Search</a></li>
+					<li><a href="add-review.html">Add Review</a></li>
+					<li><a href="add-event.html">Add Event</a></li>
+					<li><a href="sign-up.html">Sign-up/Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="add-review">
+		<div class="container">
+			<h1>The Amazing Chase</h1>
+		</div>
+	</section>
+
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+				<h1 class="page-title">About: The Amazing Chase</h1>
+				<p>A simple challenge and 60 seconds on the clock will keep your team communicating, collaborating and cheering like true champs. Based on the popular TV game show, teams work together in a race to beat the clock, facing off against the competition in simple challenges with just a Minute to Win it!</p>
+			<div class="single-result-image-container">			
+				<picture >
+				  <source media="(min-width: 650px)" srcset="img/result_image_1.jpg">
+				  <source media="(min-width: 375px)" srcset="img/result_image_2.jpg">
+				  <img src="img/amazing-chase.jpg" alt="amazing chase">
+				</picture>			
+			</div>
+
+			</article>
+			<aside class="sidebar"">
+				<div class="dark">
+					<h3>Location: 8 Elmsthorpe Avenue, Toronto, ON, Canada</h3>
+					<img class="single-result-location" src="img/location.png">
+				</div>
+			</aside>
+			<aside id="review">
+				<div class="dark">
+					<h3 itemprop="summary">John Doe: "Great Experience!!!"</h3>
+					<p itemprop="description">Me and my team were looking for a fun leadership and skills building activity, this was a total win!!</p>
+					<img class="review-image" src="img/good.jpg">
+				</div>
+			</aside>
+			<aside id="review">
+				<div class="dark">
+					<h3 itemprop="summary">Laura Smith: "Wonderful team building experience!"</h3>
+					<p itemprop="description">Me and my team were looking for a fun leadership and skills building activity, this was a total win!!</p>
+					<img class="review-image" src="img/good.jpg">
+				</div>
+			</aside>
+			<aside id="review">
+				<div class="dark">
+					<h3 itemprop="summary">Thomas Jones: "Excellent excuse to get out of the office!"</h3>
+					<p itemprop="description">Me and my team were looking for a fun leadership and skills building activity, this was a total win!!</p>
+					<img class="review-image" src="img/good.jpg">
+				</div>
+			</aside>
+			<aside id="review">
+				<div class="dark">
+					<h3 itemprop="summary">Frank Costanza: "Stay away! Poorly trained staff onsite!"</h3>
+					<p itemprop="description">Took the entire crew away from the office for this team building exercise, but it was run by a high school student on summer break!</p>
+					<img class="review-image" src="img/bad.jpg">
+				</div>
+			</aside>
+			<video width="320" height="240" controls>
+			  <source src="vid/team_building.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+
+	</section>
+
+	<div itemscope itemtype="http://schema.org/LocalBusiness">
+		<h3><span itemprop="name">The Amazing Chase</span></h3>
+		<span itemprop="description"> Top team building event in Toronto</span>
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<span itemprop="streetAddress">8 Elmsthorpe Avenue</span>
+		<span itemprop="addressLocality">Toronto</span>,
+		<span itemprop="addressRegion">ON</span>
+		</div>
+		Phone: <span itemprop="telephone">850-648-4200</span>
+	</div>
+
+	<footer>
+		<p>Team Building Copyright &copy; 2019</p>
+	</footer>
+
+</body>
+</html>

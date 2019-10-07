@@ -1,0 +1,328 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	/*background-color: #f4f4f4;*/
+	background-color: #d4d4d6;
+}
+
+#opening-desc {
+	color: 	black;
+}
+
+#review-form {
+	display: block;
+}
+
+/*Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.review-container {
+	display: block;
+	width: 50%;
+	margin: auto;
+	padding: 30px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.page-title {
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+}
+
+input{
+	width: 60%;
+	height: 40px;
+	text-align: left;
+	padding-left: 10px;
+	overflow: hidden; 
+	margin-left: 0px;
+	font-size: 15px;
+}
+
+.dark h3{
+	color: blue;
+	font-size: 19px;
+}
+
+#add-review button{
+	float: none;
+	width: 40%;
+	margin: auto;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.button_1 {
+	display: block;
+	width: 10px;
+	height: 38px;
+	background: blue;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.search_button {
+	width: 10px;
+	height: 38px;
+	background: blue;
+	border: none;
+	padding-left: 200px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.logo {
+	height: 30%;
+	width: 30%;
+	margin: 0px;
+}
+
+
+.dark {
+	padding: 15px;
+	/*background: #35424a;*/
+	background: #ABABAB;
+	color: #ffffff;
+	margin-top: 5px;
+	/*margin-bottom: 5px;*/
+	overflow: hidden;
+	border-radius: 5px
+}
+
+.review-image {
+	width: 100px;
+	border-radius: 50%;
+}
+
+.single-result-image {
+	width: 200px;
+	border-radius: 5px;
+}
+
+.single-result-location {
+	width: 250px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+header {
+	background: #438be8;
+	color: #ffffff;
+	padding-top: 10px;
+	min-height: 70px;
+	border-bottom: blue 3px solid;
+}
+
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: none;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding {
+	float: none;
+}
+
+header #branding h1 {
+	float: none;
+	margin: 0;
+}
+
+header nav {
+	float: none;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a {
+	color: blue;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+
+/*Showcase*/
+#showcase {
+	min-height: 400px;
+	background:url('../img/showcase.jpg') 0 -400px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#showcase p {
+	font-size: 20px;
+}
+
+#add-review {
+	display: block;
+	float: none;
+	padding: 15px;
+	color: #ffffff;
+	background: #35424a;
+}
+
+
+#add-review h1 {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#add-review form {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+
+.review-ddl {
+	margin-bottom: 20px;
+	width: 40%;
+}
+
+.single-result-image-container {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	/*overflow: hidden;*/
+	text-align: center;
+}
+
+/*Boxes*/
+
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img {
+	width: 50%;
+	border-radius: 50%;
+}
+
+/*Sidebar*/
+aside.sidebar {
+	float: right;
+	/*display: block;*/
+	width: 30%;
+	height: 30%;
+	margin: 10px;
+}
+
+.results-map {
+	width: 90%;
+}
+
+aside#location-sidebar {
+	width: 70%;
+	height: 30%;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+aside#review {
+	/*float: right;*/
+	display: block;
+	width: 50%;
+	height: 30%;
+	margin: 10px;
+	margin-left: 80px;
+}
+
+
+
+/*Main-col*/
+article#main-col {
+	float: left;
+	width: 65%;
+}
+
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #438be8;
+	text-align: center;
+}
+
+
+/* Media Queries*/
+
+@media (max-width: 768px) {
+	header #branding,
+	header nav,
+	header nav li,
+	#add-review h1,
+	#add-review form,
+	#boxes .box,
+	article#main-col,
+	aside.sidebar,
+	aside#location-sidebar{
+		float:none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+	#showcase h1{
+		margin-top:40px;
+	}
+
+	#add-review button{
+		float: none;
+		width: 95%;
+		margin: auto;
+	}
+
+	#add-review form{
+		width: 95%;
+		margin-bottom: 5px;
+	}
+
+}
