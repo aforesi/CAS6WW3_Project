@@ -262,7 +262,7 @@ aside#location-sidebar {
 	overflow: hidden;
 }
 
-aside#review {
+aside.review {
 	/*float: right;*/
 	display: block;
 	width: 50%;
