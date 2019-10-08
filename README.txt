@@ -1,6 +1,7 @@
 Name: Andrew Foresi
 StudentID: 001420367
 Course: CS6WW3
+Website: ec2-52-1-238-156.compute-1.amazonaws.com
 
 Brief Description of Site: This website allows you to search for 
 	team building events in your area. These events could be for
