@@ -1,5 +1,6 @@
+<!-- This page is for existing users to login to the site -->
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Login</title>
 	<meta charset="utf-8">
@@ -8,6 +9,7 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+	<!-- Header contains navigation bar and links to other sections of the website as well as the two main website logos based on the size of the display -->
 	<header>
 		<div class="container">
 			<div id="branding">
@@ -30,25 +32,31 @@
 		</div>
 	</header>
 
-	<section id="add-review">
+	<!-- This is the form used to enter the login credentials of the user -->
+	<section id="add-content">
 		<div class="page-title">
 			Login
 		</div>
 		<div class="review-container">
 			<form>
-				<input type="email" placeholder="Email">
-			</form>
-			<form>
-				<input type="password" placeholder="Password">
+				<label for="email">Email</label>
+				<br>
+				<input id="email" type="email" placeholder="Email">
+				<br>
+				<label for="password">Password</label>
+				<br>
+				<input id="password" type="password" placeholder="Password">
 			</form>
 
+			<!-- If the user does not have an account they can use this link to sign up for an account -->
 			Don't have an account? <a href="sign-up.html">Sign-up</a>
 
-			<button type="submit" class="button_1">Submit</button>
+			<button type="submit" class="select_button">Submit</button>
 
 		</div>
 	</section>
 
+	<!-- Standard footer with copyright -->
 	<footer>
 		<p>Team Building Copyright &copy; 2019</p>
 	</footer>

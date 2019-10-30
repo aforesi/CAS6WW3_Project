@@ -1,13 +1,16 @@
+<!-- This is where new users can create an account on the website -->
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Sign-up</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<script src="script.js"></script>
 </head>
 <body>
+	<!-- Header contains navigation bar and links to other sections of the website as well as the two main website logos based on the size of the display -->
 	<header>
 		<div class="container">
 			<div id="branding">
@@ -30,37 +33,49 @@
 		</div>
 	</header>
 
-	<section id="add-review">
+	<section id="add-content">
 		<div class="page-title">
 			Create an Account
 		</div>
 		<div class="review-container">
-			<form>
-				<input type="text" placeholder="First Name">
+			<!-- in order to validate the input from the form the submit button will call validateSignUp() from script.js which will check for blank values as well as ensuring that the two password entries match -->
+			<form id="sign_up_form" onsubmit="return validateSignUp()" action="sign-up.html">
+				<label for="first_name">First Name</label>
+				<br>
+				<input type="text" id="first_name">
+				<br>
+				<label for="last_name">Last Name</label>
+				<br>
+				<input type="text" id="last_name">
+				<br>
+				<label for="email">Email</label>
+				<br>
+				<input type="email" id="email">
+				<br>
+				<label for="password">Password</label>
+				<br>
+				<input type="password" id="password">
+				<br>
+				<label for="password_confirm">Confirm Password</label>
+				<br>
+				<input type="password" id="password_confirm">
+				<br>
+				<label for="telephone">Telephone (xxx-xxx-xxxx)</label>
+				<br>
+				<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="telephone">
+				<br>
+				<br>
+				<center>
+				<input type="submit" class="select_button" value="Submit">
+				</center>
 			</form>
-			<form>
-				<input type="text" placeholder="Last Name">
-			</form>
-			<form>
-				<input type="email" placeholder="Email">
-			</form>
-			<form>
-				<input type="password" placeholder="Password">
-			</form>
-			<form>
-				<input type="password" placeholder="Confirm Password">
-			</form>
-			<form>
-				<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telephone">
-			</form>
-
+			<div id="error"></div>
+			<!-- If a user already has an account they can login here -->
 			Already have an account? <a href="login.html">Log-in</a>
-
-			<button type="submit" class="button_1">Submit</button>
 
 		</div>
 	</section>
-
+	<!-- Standard footer with copyright -->
 	<footer>
 		<p>Team Building Copyright &copy; 2019</p>
 	</footer>

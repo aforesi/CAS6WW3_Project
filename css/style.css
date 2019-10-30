@@ -1,22 +1,15 @@
+/*Main CSS page for the entire website*/
+
+/*Main style for body of each HTML page in project. Specifyings font, font size and color*/
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0;
 	margin: 0;
-	/*background-color: #f4f4f4;*/
 	background-color: #d4d4d6;
 }
 
-#opening-desc {
-	color: 	black;
-}
-
-#review-form {
-	display: block;
-}
-
-/*Global */
 .container {
 	width: 80%;
 	margin: auto;
@@ -33,6 +26,13 @@ body {
 	text-align: center;
 }
 
+#input_form {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
 .page-title {
 	margin: auto;
 	text-align: center;
@@ -40,6 +40,7 @@ body {
 	font-family: Arial;
 }
 
+/*Specifies behavior and layout of all input tags and the contents within*/
 input{
 	width: 60%;
 	height: 40px;
@@ -50,86 +51,69 @@ input{
 	font-size: 15px;
 }
 
-.dark h3{
+/*Remove the underline from each result link and color the text blue*/
+.dark a {
+	text-decoration: none;
 	color: blue;
-	font-size: 19px;
 }
 
-#add-review button{
-	float: none;
-	width: 40%;
+/*On hover change the color of the link text to dark blue*/
+.dark h2:hover {
+	color: darkblue;
+	text-decoration: none;
+}
+
+/*Format for the submit button when a user is adding a review*/
+#add-content button{
+	width: 250px;
 	margin: auto;
 }
 
-
-ul {
-	margin: 0;
-	padding: 0;
-}
-
-.button_1 {
+/*Style for most of the form buttons on the site*/
+.select_button {
 	display: block;
-	width: 10px;
 	height: 38px;
 	background: blue;
 	border: none;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #ffffff;
+	text-align: center;
 }
 
-.search_button {
-	width: 10px;
-	height: 38px;
-	background: blue;
-	border: none;
-	padding-left: 200px;
-	padding-right: 20px;
-	color: #ffffff;
-}
-
-.logo {
-	height: 30%;
-	width: 30%;
-	margin: 0px;
-}
-
-
+/*background for individual tabular search results*/
 .dark {
 	padding: 15px;
-	/*background: #35424a;*/
 	background: #ABABAB;
 	color: #ffffff;
 	margin-top: 5px;
-	/*margin-bottom: 5px;*/
 	overflow: hidden;
 	border-radius: 5px
 }
 
+/*Styling for each review tile image on the results page*/
 .review-image {
 	width: 100px;
 	border-radius: 50%;
 }
 
+/*Styling for the single image on the detailed result page*/
 .single-result-image {
 	width: 200px;
 	border-radius: 5px;
 }
 
-.single-result-location {
-	width: 250px;
-	padding: 10px;
-	overflow: hidden;
-}
-
+/*formatting for header across the site*/
 header {
 	background: #438be8;
 	color: #ffffff;
 	padding-top: 10px;
 	min-height: 70px;
 	border-bottom: blue 3px solid;
+	padding-bottom: 10px;
 }
 
+/*formatting for the links within the header across the website*/
 header a {
 	color: #ffffff;
 	text-decoration: none;
@@ -137,37 +121,26 @@ header a {
 	font-size: 16px;
 }
 
+/*formating for all list elements in the header*/
 header li {
 	float: none;
 	display: inline;
 	padding: 0 20px 0 20px;
 }
 
-header #branding {
-	float: none;
-}
-
-header #branding h1 {
-	float: none;
-	margin: 0;
-}
-
-header nav {
-	float: none;
-	margin-top: 10px;
-}
-
-header .highlight, header .current a {
-	color: blue;
-	font-weight: bold;
-}
-
+/*change color when hovering over navigation links*/
 header a:hover {
 	color: #cccccc;
 	font-weight: bold;
 }
 
-/*Showcase*/
+/*change color of current tab on the navigation menu*/
+header .highlight, header .current a {
+	color: blue;
+	font-weight: bold;
+}
+
+/*Links to background image on main index page*/
 #showcase {
 	min-height: 400px;
 	background:url('../img/showcase.jpg') 0 -400px;
@@ -175,6 +148,7 @@ header a:hover {
 	color: #ffffff;
 }
 
+/*styling for the h1 tag within the main index page*/
 #showcase h1 {
 	margin-top: 100px;
 	font-size: 55px;
@@ -182,11 +156,8 @@ header a:hover {
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-#showcase p {
-	font-size: 20px;
-}
-
-#add-review {
+/*Form styling for most forms on site*/
+#add-content {
 	display: block;
 	float: none;
 	padding: 15px;
@@ -194,41 +165,42 @@ header a:hover {
 	background: #35424a;
 }
 
-
-#add-review h1 {
+/*styling for h1 tag within the add-content form*/
+#add-content h1 {
 	float: left;
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 0px;
 }
 
-#add-review form {
+/*styling of add-content form on most user submition pages*/
+#add-content form {
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 0px;
 }
 
-
+/*Styling for review drop down list where users can select an overall rating*/
 .review-ddl {
 	margin-bottom: 20px;
 	width: 40%;
 }
 
+/*Container for single result page image*/
 .single-result-image-container {
 	width: 80%;
 	height: auto;
 	margin: auto;
-	/*overflow: hidden;*/
 	text-align: center;
 }
 
-/*Boxes*/
-
+/*Styling for main images on index.html page*/
 #boxes {
 	margin-top: 20px;
 }
 
+/*Individual styling for boxes on the index.html page*/
 #boxes .box {
 	float: left;
 	text-align: center;
@@ -236,34 +208,39 @@ header a:hover {
 	padding: 10px;
 }
 
+/*Image styling for main index category images*/
 #boxes .box img {
 	width: 50%;
 	border-radius: 50%;
 }
 
-/*Sidebar*/
+/*styling for sidebar on individual result page*/
 aside.sidebar {
 	float: right;
-	/*display: block;*/
 	width: 30%;
 	height: 30%;
 	margin: 10px;
 }
 
-.results-map {
+/*styling for main maps*/
+#map {
 	width: 90%;
+	height: 300px;
+	color: black;
 }
 
+/*Contains map on individual results page*/
 aside#location-sidebar {
 	width: 70%;
 	height: 30%;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
+	color: black;
 }
 
+/*Styling for individual review on individual results page*/
 aside.review {
-	/*float: right;*/
 	display: block;
 	width: 50%;
 	height: 30%;
@@ -271,15 +248,13 @@ aside.review {
 	margin-left: 80px;
 }
 
-
-
-/*Main-col*/
+/*styling for individual result page*/
 article#main-col {
 	float: left;
 	width: 65%;
 }
 
-
+/*Styling for footer across all pages*/
 footer {
 	padding: 20px;
 	margin-top: 20px;
@@ -288,41 +263,28 @@ footer {
 	text-align: center;
 }
 
-
-/* Media Queries*/
+/*Use of media queries to change layout of site when width goes below 768px*/
+/*Changing the float to 'none' allows for them to be stacked upon eachother*/
 
 @media (max-width: 768px) {
 	header #branding,
 	header nav,
 	header nav li,
-	#add-review h1,
-	#add-review form,
+	#add-content h1,
+	#add-content form,
 	#boxes .box,
 	article#main-col,
 	aside.sidebar,
 	aside#location-sidebar{
-		float:none;
+		float: none;
 		text-align: center;
 		width: 100%;
 	}
-
-	header {
-		padding-bottom: 20px;
-	}
-
 	#showcase h1{
-		margin-top:40px;
+		margin-top: 40px;
 	}
-
-	#add-review button{
-		float: none;
-		width: 95%;
+	#add-content button{
+		width: 65%;
 		margin: auto;
 	}
-
-	#add-review form{
-		width: 95%;
-		margin-bottom: 5px;
-	}
-
 }

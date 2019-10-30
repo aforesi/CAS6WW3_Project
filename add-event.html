@@ -1,13 +1,17 @@
+<!-- This page is for adding new events that are not already listed on the site. Users can then add reviews that relate to these events -->
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Add Event</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<!-- Link to the javascript file script.js that contains logic on how to get location and some other validation functionality -->
+	<script src="script.js"></script>
 </head>
 <body>
+	<!-- Header contains navigation bar and links to other sections of the website as well as the two main website logos based on the size of the display -->
 	<header>
 		<div class="container">
 			<div id="branding">
@@ -30,42 +34,58 @@
 		</div>
 	</header>
 
-	<section id="add-review">
+	<!-- Here the user can add an event with information on the event's name, company name, address, description, latitude and longitude which can be filled out using the users current location as well as an image and video associated with the event -->
+	<section id="add-content">
 		<div class="page-title">
 			Add an Event
 		</div>
 		<div class="review-container">
-			<form>
-				<input type="text" placeholder="Event Name">
+			<form class="input_form">
+				<label for="event_name">Event Name</label>
+				<br>
+				<input id="event_name" type="text" required>
+				<br>
+				<label for="company_name">Company Name</label>
+				<br>     
+				<input id="company_name" type="text" required>
+				<br>
+				<label for="address">Address</label>
+				<br>
+				<input id="address" type="text" required>
+				<br>
+				<label for="event_description">Event Description</label>
+				<br>
+				<input id="event_description" type="text" required>
+				<br>
+				<label for="latitude">Latitude</label>
+				<br>
+				<input id="latitude"type="text">
+				<br>
+				<label for="longitude">Longitude</label>
+				<br>
+				<input id="longitude" type="text">
+				<br>
+				OR
+				<button class="select_button" onclick="setCurrentLocation()">Set Current Location as Event Location</button>
+				<br>
+				<center>
+				<label for="file_upload">Select an Image to Upload</label>
+				</center>
+				<input id="file_upload" type="file" name="fileToUpload">
+				<center>
+				<label for="video_link">File to Upload</label>
+				</center>
+				<br>	
+				<input id="video_link" type="text" placeholder="Link to Video (i.e. https://www.youtube.com/...)">
+				<center>
+				<br>
+				<input class="select_button" type="submit" value="Submit">
+				</center>
 			</form>
-			<form>
-				<input type="text" placeholder="Company Name">
-			</form>
-			<form>
-				<input type="text" placeholder="Address">
-			</form>
-			<form>
-				<input type="text" placeholder="Event Description">
-			</form>
-			<form>
-				<input type="text" placeholder="Latitude">
-			</form>
-			<form>
-				<input type="text" placeholder="Longitude">
-			</form>
-			Select an image to upload
-			<form>
-			    <input type="file" name="fileToUpload" id="fileToUpload">
-			    <!-- <input type="submit" value="Upload Image" name="submit"> -->
-			</form>
-			<form>
-				<input type="text" placeholder="Link to Video (i.e. https://www.youtube.com/...)">
-			</form>
-
-			<button type="submit" class="button_1">Submit</button>
 		</div>
 	</section>
 
+	<!-- Footer containing title and copyright logo -->
 	<footer>
 		<p>Team Building Copyright &copy; 2019</p>
 	</footer>

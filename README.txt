@@ -1,7 +1,7 @@
 Name: Andrew Foresi
 StudentID: 001420367
 Course: CS6WW3
-Website: ec2-52-1-238-156.compute-1.amazonaws.com
+Website: https://surveycollection101.com/          NOTE: This was just an old domain I had purchased for a previous project
 Github Repository: https://github.com/aforesi/CAS6WW3_Project
 
 Brief Description of Site: This website allows you to search for 

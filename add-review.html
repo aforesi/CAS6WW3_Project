@@ -1,5 +1,6 @@
+<!-- This page is for adding reviews to various events that are listed on the site -->
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Add Review</title>
 	<meta charset="utf-8">
@@ -8,6 +9,7 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+<!-- Header contains navigation bar and links to other sections of the website as well as the two main website logos based on the size of the display -->
 	<header>
 		<div class="container">
 			<div id="branding">
@@ -30,38 +32,53 @@
 		</div>
 	</header>
 
-	<section id="add-review">
+	<!-- Section where a user can add a review to a copmany that hosts a particular event. Includes fields like user, company name, address, longitude and latitude and the review itself. There is also a section to leave the overall rating score  -->
+	<section id="add-content">
 		<div class="page-title">
 			Add a Review
 		</div>
 		<div class="review-container">
 			<form>
-				<input type="text" placeholder="User">
+				<label for="user">User</label>
+				<br>
+				<input id="user" type="text">
+				<br>
+				<label for="company_name">Company Name</label>
+				<br>
+				<input id="company_name" type="text">
+				<br>
+				<label for="address">Address</label>
+				<br>
+				<input id="address" type="text">
+				<br>
+				<label for="latitude">Latitude</label>
+				<br>
+				<input id="latitude" type="text">
+				<br>
+				<label for="longitude">Longitude</label>
+				<br>
+				<input id="longitude" type="text">
+				<br>
+				<label for="review">Review</label>
+				<br>
+				<input id="review" idtype="text">
+				<br>
+				<br>
+				<label for="review_status">Select an Overall Rating</label>
+				<select id="review_status" class="review-ddl" name="review-status">
+				<option value="default">Select an Overall Review</option>
+				<option value="50">> 50% Positive</option>
+				<option value="60">> 60% Positive</option>
+				<option value="70">> 70% Positive</option>
+				<option value="80">> 80% Positive</option>
+				<option value="90">> 90% Positive</option>
+				</select>
+				<button type="submit" class="select_button">Submit</button>
 			</form>
-			<form>
-				<input type="text" placeholder="Company Name">
-			</form>
-			<form>
-				<input type="text" placeholder="Address">
-			</form>
-			<form>
-				<input type="text" placeholder="Latitude">
-			</form>
-			<form>
-				<input type="text" placeholder="Longitude">
-			</form>
-			<form>
-				<input type="text" placeholder="Review">
-			</form>
-			<select class="review-ddl" name="review-status">
-				<option value="volvo">Select an Overall Review</option>
-				<option value="volvo">Positive Review</option>
-				<option value="saab">Negative Review</option>
-			</select>
-			<button type="submit" class="button_1">Submit</button>
 		</div>
 	</section>
 
+	<!-- Footer containing title and copyright logo -->
 	<footer>
 		<p>Team Building Copyright &copy; 2019</p>
 	</footer>
