@@ -17,15 +17,6 @@ body {
 	text-align: center;
 }
 
-.review-container {
-	display: block;
-	width: 50%;
-	margin: auto;
-	padding: 30px;
-	overflow: hidden;
-	text-align: center;
-}
-
 #input_form {
 	width: 100%;
 	margin-top: 10px;
@@ -53,20 +44,35 @@ input{
 
 /*Remove the underline from each result link and color the text blue*/
 .dark a {
-	text-decoration: none;
-	color: blue;
+	/*text-decoration: none;*/
+
 }
 
 /*On hover change the color of the link text to dark blue*/
 .dark h2:hover {
-	color: darkblue;
-	text-decoration: none;
+	/*text-decoration: none;*/
+}
+
+.dark p {
+	/*opacity: 0.75;*/
 }
 
 /*Format for the submit button when a user is adding a review*/
 #add-content button{
 	width: 250px;
 	margin: auto;
+}
+
+/*Style for most of the form buttons on the site*/
+.main_search_button {
+	display: block;
+	height: 38px;
+	background: blue;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	text-align: center;
 }
 
 /*Style for most of the form buttons on the site*/
@@ -81,26 +87,94 @@ input{
 	text-align: center;
 }
 
+.sign_up_button {
+	width: 60%;
+	height: 40px;
+	text-align: left;
+	padding-left: 10px;
+	overflow: hidden; 
+	margin-left: 0px;
+	font-size: 15px;
+}
+
 /*background for individual tabular search results*/
 .dark {
+	text-decoration: none;
+	background: #999999;
+	color: black;
+	margin-top: 5px;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 650px;
+	width: 350px;
+	border-radius: 10px
+}
+
+.logo {
+	width: 30px;
+	margin-right: 15px;
+	margin-bottom: -10px;
+}
+
+.image-title-container {
+	position: relative;
+	text-align: center;
+}
+
+.image-title-container a {
+	font-size: 20px;
+	font-family: "Georgia";
+	color: black;
+}
+
+.result-title {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+/*background for map-container*/
+.map-container {
+	background: #ABABAB;
+	color: #ffffff;
+	margin-top: 15px;
+	overflow: hidden;
+	height: 400px;
+	width: 400px;
+	border-radius: 5px
+}
+
+.map-container h3{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*background for individual tabular search results*/
+.individual_review {
+	display: inline-block;
 	padding: 15px;
 	background: #ABABAB;
 	color: #ffffff;
-	margin-top: 5px;
+	margin-top: 2px;
 	overflow: hidden;
+	width: 400px;
+	height: 120px;
 	border-radius: 5px
 }
+
 
 /*Styling for each review tile image on the results page*/
 .review-image {
 	width: 100px;
-	border-radius: 50%;
 }
 
 /*Styling for the single image on the detailed result page*/
 .single-result-image {
-	width: 200px;
-	border-radius: 5px;
+	width: 100%;
+	opacity: 0.3;
+	border-radius: 0px;
 }
 
 /*formatting for header across the site*/
@@ -181,6 +255,12 @@ header .highlight, header .current a {
 	margin-left: 0px;
 }
 
+.average_review_image {
+	display: inline-block;
+	/*text-align: center;*/
+	width: 20%;
+}
+
 /*Styling for review drop down list where users can select an overall rating*/
 .review-ddl {
 	margin-bottom: 20px;
@@ -188,19 +268,16 @@ header .highlight, header .current a {
 }
 
 /*Container for single result page image*/
-.single-result-image-container {
-	width: 80%;
-	height: auto;
-	margin: auto;
-	text-align: center;
+.single-result-image-container img{
+	width: 60%;
 }
 
-/*Styling for main images on index.html page*/
+/*Styling for main images on index.php page*/
 #boxes {
 	margin-top: 20px;
 }
 
-/*Individual styling for boxes on the index.html page*/
+/*Individual styling for boxes on the index.php page*/
 #boxes .box {
 	float: left;
 	text-align: center;
@@ -216,40 +293,22 @@ header .highlight, header .current a {
 
 /*styling for sidebar on individual result page*/
 aside.sidebar {
-	float: right;
-	width: 30%;
-	height: 30%;
-	margin: 10px;
+	display: inline-block;
 }
 
 /*styling for main maps*/
 #map {
-	width: 90%;
-	height: 300px;
-	color: black;
-}
-
-/*Contains map on individual results page*/
-aside#location-sidebar {
-	width: 70%;
-	height: 30%;
 	display: inline-block;
-	vertical-align: middle;
-	overflow: hidden;
-	color: black;
+	float: none;
+	width: 100%;
+	height: 400px;
+	margin-top: 15px;
 }
 
-/*Styling for individual review on individual results page*/
-aside.review {
-	display: block;
-	width: 50%;
-	height: 30%;
-	margin: 10px;
-	margin-left: 80px;
-}
 
 /*styling for individual result page*/
 article#main-col {
+	margin-top: 15px;
 	float: left;
 	width: 65%;
 }
@@ -266,6 +325,12 @@ footer {
 /*Use of media queries to change layout of site when width goes below 768px*/
 /*Changing the float to 'none' allows for them to be stacked upon eachother*/
 
+/*@media (max-width: 1130px) {
+	aside.sidebar{
+		float: left;
+	}
+}*/
+
 @media (max-width: 768px) {
 	header #branding,
 	header nav,
@@ -274,7 +339,6 @@ footer {
 	#add-content form,
 	#boxes .box,
 	article#main-col,
-	aside.sidebar,
 	aside#location-sidebar{
 		float: none;
 		text-align: center;
